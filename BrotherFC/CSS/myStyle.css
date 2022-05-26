@@ -1,0 +1,16 @@
+h1{
+    text-align: center;
+}
+
+body {
+    overflow-y: visible;
+    background-color: #80c2b5;
+}
+
+.my_footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    height: 30px;
+}

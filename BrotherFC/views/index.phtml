@@ -1,0 +1,55 @@
+<?php require('views/Template/header.phtml')?>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <body>
+                <table class="table border border-5" style="left: 10rem">
+                    <thead>
+                    <tr>
+                        <th scope="col">Club</th>
+                        <th scope="col">MP</th>
+                        <th scope="col">W</th>
+                        <th scope="col">L</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <?php foreach ($view->Table as $data) {
+                        echo '<tr><td>' . $data->getclub() .'</td> <td>'. $data->getMP().'</td> <td> '.$data->getW().'</td> <td>'. $data->getL(). '</tr>';
+                    }?>
+                    </tbody>
+                </table>
+                <form method="post"  action="/index.php">
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary" type="submit" name="ZTS">ZTS FC Wins</button>
+                    <button class="btn btn-primary" type="submit"  name="MAC">MAC FC Wins</button>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label" >Type Comment</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="dataEntry"></textarea>
+                </div>
+                    <div class="col-auto">
+                        <button type="submit" name="Commenting" class="btn btn-primary mb-3">Post Comment</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col border border-5">
+                <h1 class="align-content-center">TBFL SCORES:</h1>
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">#Fixture</th>
+                        <th scope="col">Comment</th>
+                    </tr>
+                    <tbody>
+                    <?php foreach ($view->News as $news) {
+                        echo '<tr><td>' . $news->getFixture() .'</td> <td>'. $news->getComments().'</tr>';
+                    }?>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+</section>
+</body>
+<?php require('views/Template/footer.phtml')?>
