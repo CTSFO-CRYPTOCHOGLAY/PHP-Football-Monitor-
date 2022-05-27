@@ -1,6 +1,6 @@
 Project title: PHP football monitor 
 
-Description of Project: This is a small web application that was developed by Mohammed Choglay(myself) to keep track of me and brother's football league. As this was the most effective way. 
+Description of Project: This is a small web application that was developed by Mohammed Choglay (myself) to keep track of me and brother's football league. As this was the most effective way. 
 
 Content: project folder with PHP, phtml, and CSS files 
 
