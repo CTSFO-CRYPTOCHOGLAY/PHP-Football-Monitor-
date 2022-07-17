@@ -1,4 +1,4 @@
-## PHP football monitor 
+## PHP Football Monitor 
 # Description of Project 
 This is a small web application that was developed by Mohammed Choglay (myself) to keep track of me and brother's football league. As this was the most effective way. 
 # Installation 
