@@ -6,5 +6,5 @@ Download folder. And run using XAMPP, LAMP, ISS or any of your choice as the mos
 # usage 
 Once installation the is complete you can open the index.phtml in your most prefered web broswer and use the web application.
 # credits 
-Developed by Mohammed Ali Choglay 
+Developed by M Choglay 
 
